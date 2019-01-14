@@ -29,4 +29,9 @@ $(document).ready(function(){
 		});
 	}
 	
+	$('#verencuestas').click(function(event) {
+		$.post('pages/tabla.php', function(data) {
+			$('#contenido').html(data);
+		});
+	});
 });
